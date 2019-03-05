@@ -1,2 +1,2 @@
 # SearchSavior
-Unified Search Engine
+Unified Search Tool
