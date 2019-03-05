@@ -1,22 +1,61 @@
 <html>
-  <head>
-    <title>SearchSavior</title>
-  </head>
-  <body>
-    <div1></div1>
-	<script>
-	  (function() {
-	    var cx = '003287012021853683961:lejy8ejlbz0';
-	    var gcse = document.createElement('script');
-	    gcse.type = 'text/javascript';
-	    gcse.async = true;
-	    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-	    var s = document.getElementsByTagName('script')[0];
-	    s.parentNode.insertBefore(gcse, s);
-	  })();
-	</script>
-	<h3 style="color:lightblue" align="center">Khan Academy</h3>
-	<gcse:searchresults-only></gcse:searchresults-only>
-    <div2></div2>
-  </body>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SearchSavior</title>
+        <link rel="shortcut icon" type="image/png" href="icon128.png"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+      <nav class="nav-extended">
+        <div class="nav-wrapper blue lighten-2">
+          <img src="icon64.png">
+          <a href="index.html/?q=golf" class="brand-logo">SearchSavior</a>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent blue lighten-2">
+            <li class="tab"><a href="google.html">Google</a></li>
+            <li class="tab"><a href="youtube.html">Youtube</a></li>
+            <li class="tab"><a class="active" href="khan_academy.html">Khan Academy</a></li>
+            <li class="tab"><a href="wikipedia.html">Wikipedia</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav>
+          <div class="nav-wrapper blue lighten-1">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+      </nav>
+      <div1></div1>
+		<script>
+			  (function() {
+			    var cx = '003287012021853683961:lejy8ejlbz0';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+		</script>
+        <gcse:searchresults-only></gcse:searchresults-only>
+      <div2></div2>
+      <footer class="page-footer blue lighten-2">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2019 Copyright Akshay R. Kapadia, Zachary Kessler, Jaad Barguti
+          <div>Logo made by <a href="https://www.freepik.com/" title="Freepik" style="color:white;">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon" style="color:white;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" style="color:white;" target="_blank">CC 3.0 BY</a>
+        </div>
+      </footer>
+    </body>
 </html>
