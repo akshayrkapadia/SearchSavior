@@ -35,8 +35,8 @@
       </div>
       <div1></div1>
       <script type="text/javascript">
-        var urlParams = new URLSearchParams(window.location.search);
-        document.getElementById("searchbar").value = urlParams.get("q");
+        var param = new URLSearchParams(window.location.search);
+        document.getElementById("searchbar").value = param.get("q");
      	</script>
 		<script>
 		  (function() {
