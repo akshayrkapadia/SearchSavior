@@ -18,18 +18,18 @@
         </div>
         <div class="nav-content">
           <ul class="tabs tabs-transparent blue lighten-2">
-            <li class="tab disabled"><a class="active">Google</a></li>
+            <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='google.html?q=' + q; window.location.replace(url);">Google</a></li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='youtube.html?q=' + q; window.location.replace(url);">Youtube</a></li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='khan_academy.html?q=' + q; window.location.replace(url);">Khan Academy</a></li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='wikipedia.html?q=' + q; window.location.replace(url);">Wikipedia</a></li>
-            <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='quora.html?q=' + q; window.location.replace(url);">Quora</a></li>
+            <li class="tab disabled"><a class="active">Quora</a></li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='yahoo_answers.html?q=' + q; window.location.replace(url);">Yahoo Answers</a></li>
           </ul>
         </div>
       </nav>
       <div>
   	    <input id="searchbar" placeholder="Search for anything you want">
-        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url ='google.html?q=' + q; window.location.replace(url);">Search
+        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url ='quora.html?q=' + q; window.location.replace(url);">Search
         <i class="material-icons right">send</i>
         </button>
       </div>
@@ -37,19 +37,19 @@
       <script type="text/javascript">
         var urlParams = new URLSearchParams(window.location.search);
         document.getElementById("searchbar").value = urlParams.get("q");
-	   </script>
-		<script>
-		  (function() {
-		    var cx = '003287012021853683961:clboqhv4rzw';
-		    var gcse = document.createElement('script');
-		    gcse.type = 'text/javascript';
-		    gcse.async = true;
-		    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(gcse, s);
-		  })();
-		</script>
-		<gcse:searchresults-only></gcse:searchresults-only>
+     	</script>
+      <script>
+        (function() {
+          var cx = '003287012021853683961:fazdrgvhlyy';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:searchresults-only></gcse:searchresults-only>
       <div2></div2>
       <footer class="page-footer blue lighten-2">
         <div class="footer-copyright">
