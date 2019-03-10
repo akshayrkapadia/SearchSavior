@@ -33,7 +33,7 @@
               var param = new URLSearchParams(window.location.search);
               var q = param.get("q");
               document.getElementById("searchbar").value = q;
-              if(q != null) {
+              if((q != null) && (q != '')) {
                 document.location.replace('google.html?q=' + q);
               }
             </script>
