@@ -1,8 +1,8 @@
 {
   "name": "SearchSavior",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Unified Search Tool",
-  "permissions": ["activeTab", "contextMenus"],
+  "permissions": ["*://*/*", "activeTab", "contextMenus"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false

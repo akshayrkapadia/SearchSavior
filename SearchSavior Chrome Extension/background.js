@@ -19,8 +19,12 @@ chrome.runtime.onInstalled.addListener(function() {
 
 chrome.commands.onCommand.addListener(function(command) {
   chrome.tabs.executeScript({code: "window.getSelection().toString();"}, function(selection) {
-    var q = selection[0];
-    var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
-    chrome.tabs.create({"url":url})
+    if (selection != null) {
+      var q = selection[0];
+      var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
+      chrome.tabs.create({"url":url})
+    } else {
+      alert("NULL");
+    }
   });
 });
