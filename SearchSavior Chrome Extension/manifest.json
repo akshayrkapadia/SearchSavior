@@ -2,7 +2,7 @@
   "name": "SearchSavior",
   "version": "1.0",
   "description": "Unified Search Tool",
-  "permissions": ["http://*/*", "https://*/*", "activeTab", "declarativeContent", "storage", "contextMenus"],
+  "permissions": ["activeTab", "contextMenus"],
   "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
