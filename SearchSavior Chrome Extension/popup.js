@@ -12,5 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 chrome.tabs.executeScript({code: "window.getSelection().toString();"}, function(selection) {
-  document.getElementById("searchbar").value = selection[0];
+  if (selection != null) {
+  	document.getElementById("searchbar").value = selection[0];
+  } else {
+  	alert("Null");
+  }
 });
