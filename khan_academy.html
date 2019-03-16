@@ -29,7 +29,7 @@
         </div>
       </nav>
       <div>
-  	    <input id="searchbar" placeholder="Search for anything you want">
+        <input id="searchbar" placeholder="Search for anything you want">
         <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url ='khan_academy.html?q=' + q; window.location.replace(url);">Search
         <i class="material-icons right">send</i>
         </button>
@@ -38,8 +38,7 @@
       <script type="text/javascript">
         var param = new URLSearchParams(window.location.search);
         document.getElementById("searchbar").value = param.get("q");
-     	</script>
-      <script>
+      </script>
       <script>
         (function() {
           var cx = '003287012021853683961:lejy8ejlbz0';
