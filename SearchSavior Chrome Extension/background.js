@@ -23,8 +23,6 @@ chrome.commands.onCommand.addListener(function(command) {
       var q = selection[0];
       var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
       chrome.tabs.create({"url":url})
-    } else {
-      alert("NULL");
     }
   });
 });

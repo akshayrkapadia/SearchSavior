@@ -2,7 +2,7 @@
   "name": "SearchSavior",
   "version": "1.0.2",
   "description": "A Seamlessly Integrated Search Tool For All Your Academic Needs",
-  "permissions": ["*://*/*", "activeTab", "contextMenus"],
+  "permissions": ["activeTab", "contextMenus"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
