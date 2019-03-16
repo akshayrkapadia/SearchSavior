@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Unified Search Tool",
   "permissions": ["activeTab", "contextMenus"],
-  "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
