@@ -3,17 +3,18 @@
 // found in the LICENSE file.
 
 'use strict';
-
-var contextMenuItem = {
+chrome.runtime.onInstalled.addListener(function() {
+  var contextMenuItem = {
   "id": "SearchSavior",
   "title": "SearchSavior",
   "contexts": ["selection"]
-};
-chrome.contextMenus.create(contextMenuItem);
-chrome.contextMenus.onClicked.addListener(function(click) {
-  var q = click.selectionText;
-  var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
-  chrome.tabs.create({"url":url})
+  };
+  chrome.contextMenus.create(contextMenuItem);
+  chrome.contextMenus.onClicked.addListener(function(click) {
+    var q = click.selectionText;
+    var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
+    chrome.tabs.create({"url":url})
+  });
 });
 
 chrome.commands.onCommand.addListener(function(command) {
