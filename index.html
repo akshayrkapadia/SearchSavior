@@ -9,22 +9,15 @@
         <title>SearchSavior</title>
         <link rel="shortcut icon" type="image/png" href="icon128.png"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({
-                  google_ad_client: "ca-pub-1710889768420399",
-                  enable_page_level_ads: true
-             });
-        </script>
     </head>
     <body>
       <nav class="nav-extended">
-        <div class="nav-wrapper blue lighten-2">
-          <img src="icon64.png" onclick="document.location.replace('index.html');">
-          <a href="index.html" class="brand-logo">SearchSavior</a>
-        </div>
         <div class="nav-content">
-          <ul class="tabs tabs-transparent blue lighten-2">
+          <ul class="tabs tabs-transparent grey darken-3">
+            <li class="tab">
+              <img style="padding-top: 6; padding-left: 8" src="icon32.png" onclick="document.location.replace('index.html');">
+              <a href="index.html" class="brand-logo">SearchSavior</a>
+            </li>
             <li class="tab"><a href="google.html">Google</a></li>
             <li class="tab"><a href="youtube.html">Youtube</a></li>
 <!--             <li class="tab"><a href="khan_academy.html">Khan Academy</a></li>
@@ -35,30 +28,23 @@
           </ul>
         </div>
       </nav>
-      <div>
-            <input id="searchbar" placeholder="Search for anything you want">
-            <script type="text/javascript">
-              var param = new URLSearchParams(window.location.search);
-              var q = param.get("q");
-              document.getElementById("searchbar").value = q;
-              if((q != null) && (q != '')) {
-                document.location.replace('google.html?q=' + q);
-              }
-            </script>
-            <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url = 'google.html?q=' + q; window.location.replace(url);">Search
-            <i class="material-icons right">send</i>
-            </button>
+      <div align="center">
+        <img align="center" style="padding-top: 250;" src="icon128.png" onclick="document.location.replace('index.html');">
+        <a style="padding-bottom: 100" href="index.html" class="brand-logo"><h3><strong>SearchSavior<strong></h3></a>
       </div>
-      <div style="height:59.85%;"></div>
-      <div1></div1>
-        <h3 style="color:lightgrey">Fast, Convenient Browser Extension Making Your Academic Searches Deeper</h3>
-      <div2></div2>
-      <footer class="page-footer blue lighten-2">
-        <div class="footer-copyright">
-          <div class="container">
-          © 2019 Copyright Akshay R. Kapadia, Zachary Kessler, Jaad Barguti
-          <div>Logo made by <a href="https://www.freepik.com/" title="Freepik" style="color:white;">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon" style="color:white;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" style="color:white;" target="_blank">CC 3.0 BY</a>
-        </div>
-      </footer>
+      <div align="center">
+        <input style="all: initial; max-height: 200; max-width: 600; min-width: 600; padding-top: 50" id="searchbar" placeholder="Search for anything you want">
+        <script type="text/javascript">
+          var param = new URLSearchParams(window.location.search);
+          var q = param.get("q");
+          document.getElementById("searchbar").value = q;
+          if((q != null) && (q != '')) {
+            document.location.replace('google.html?q=' + q);
+          }
+        </script>
+        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url = 'google.html?q=' + q; window.location.replace(url);">Search
+        <i class="material-icons right">send</i>
+        </button>
+      </div>
     </body>
 </html>

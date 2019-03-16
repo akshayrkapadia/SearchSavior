@@ -12,12 +12,12 @@
     </head>
     <body>
       <nav class="nav-extended">
-        <div class="nav-wrapper blue lighten-2">
-          <img src="icon64.png" onclick="document.location.replace('index.html');">
-          <a href="index.html" class="brand-logo">SearchSavior</a>
-        </div>
         <div class="nav-content">
-          <ul class="tabs tabs-transparent blue lighten-2">
+          <ul class="tabs tabs-transparent grey darken-3">
+            <li class="tab">
+              <img style="padding-top: 6; padding-left: 8" src="icon32.png" onclick="document.location.replace('index.html');">
+              <a href="index.html" class="brand-logo">SearchSavior</a>
+            </li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='google.html?q=' + q; window.location.replace(url);">Google</a></li>
             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='youtube.html?q=' + q; window.location.replace(url);">Youtube</a></li>
 <!--             <li class="tab"><a onclick="var q = document.getElementById('searchbar').value; var url ='khan_academy.html?q=' + q; window.location.replace(url);">Khan Academy</a></li> -->
@@ -28,8 +28,12 @@
           </ul>
         </div>
       </nav>
-      <div>
-  	    <input id="searchbar" placeholder="Search for anything you want">
+      <div align="center">
+        <img align="center" style="padding-top: 50;" src="icon128.png" onclick="document.location.replace('index.html');">
+        <a style="padding-bottom: 100" href="index.html" class="brand-logo"><h3><strong>SearchSavior<strong></h3></a>
+      </div>
+      <div align="center">
+        <input id="searchbar" style="max-width: 600;" placeholder="Search for anything you want">
         <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url ='yahoo_answers.html?q=' + q; window.location.replace(url);">Search
         <i class="material-icons right">send</i>
         </button>
@@ -51,13 +55,5 @@
 			  })();
 			</script>
 			<gcse:searchresults-only></gcse:searchresults-only>
-      <div2></div2>
-      <footer class="page-footer blue lighten-2">
-        <div class="footer-copyright">
-          <div class="container">
-          © 2019 Copyright Akshay R. Kapadia, Zachary Kessler, Jaad Barguti
-          <div>Logo made by <a href="https://www.freepik.com/" title="Freepik" style="color:white;">Freepik</a> from <a href="https://www.flaticon.com/"              title="Flaticon" style="color:white;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" style="color:white;" target="_blank">CC 3.0 BY</a>
-        </div>
-      </footer>
     </body>
 </html>
