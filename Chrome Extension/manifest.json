@@ -1,6 +1,6 @@
 {
   "name": "SearchSavior",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Unified Search Tool",
   "permissions": ["http://*/*", "https://*/*", "activeTab", "declarativeContent", "storage", "contextMenus"],
   "options_page": "options.html",
