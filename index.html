@@ -37,7 +37,9 @@
         <script type="text/javascript">
           var param = new URLSearchParams(window.location.search);
           var q = param.get("q");
-          document.getElementById("searchbar").value = q;
+          var searchbar = document.getElementById("searchbar");
+          searchbar.value = q;
+          searchbar.focus();
           if((q != null) && (q != '')) {
             document.location.replace('google.html?q=' + q);
           }
