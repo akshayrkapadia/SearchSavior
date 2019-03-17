@@ -41,7 +41,9 @@
       <div1></div1>
       <script type="text/javascript">
         var param = new URLSearchParams(window.location.search);
-        document.getElementById("searchbar").value = param.get("q");
+        var searchbar = document.getElementById("searchbar");
+        searchbar.focus();
+        searchbar.value = param.get("q");
       </script>
 			<script>
 			  (function() {
