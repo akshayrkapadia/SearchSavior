@@ -1,6 +1,6 @@
 {
   "name": "SearchSavior",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Seamlessly Integrated Search Tool For All Your Academic Needs",
   "permissions": ["*://*/*", "activeTab", "contextMenus"],
   "background": {

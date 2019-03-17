@@ -9,10 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
         var url ='https://akshayrkapadia.github.io/SearchSavior/?q=' + q;
         document.getElementById("search").href = url;
     });
+    var searchbar = document.getElementById('searchbar');
+    searchbar.addEventListener("keyup", function(e) {
+    	if (e.keyCode == 13) {
+      	searchButton.click();
+    	}
+  	});
 });
 
 chrome.tabs.executeScript({code: "window.getSelection().toString();"}, function(selection) {
+  var searchbar = document.getElementById("searchbar");
   if (selection != null) {
-  	document.getElementById("searchbar").value = selection[0];
+  	searchbar.value = selection[0];
   }
+  searchbar.focus();
 });
