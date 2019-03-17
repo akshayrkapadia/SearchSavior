@@ -43,8 +43,13 @@
           if((q != null) && (q != '')) {
             document.location.replace('google.html?q=' + q);
           }
+          searchbar.addEventListener("keyup", function(e) {
+            if (e.keyCode == 13) {
+              document.getElementById("searchbutton").click();
+            }
+          });
         </script>
-        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url = 'google.html?q=' + q; window.location.replace(url);">Search
+        <button class="btn waves-effect waves-light blue" id="searchbutton" type="submit" name="action" onclick="var q = document.getElementById('searchbar').value; var url = 'google.html?q=' + q; window.location.replace(url);">Search
         <i class="material-icons right">send</i>
         </button>
       </div>
