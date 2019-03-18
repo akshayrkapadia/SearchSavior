@@ -2,7 +2,7 @@
   "name": "SearchSavior",
   "version": "1.0.4",
   "description": "A Seamlessly Integrated Search Tool For All Your Academic Needs",
-  "permissions": ["*://*/*", "activeTab", "contextMenus"],
+  "permissions": ["activeTab", "contextMenus"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -12,8 +12,7 @@
       "suggested_key": {
         "default": "Ctrl+Shift+0"
       },
-      "description": "Search",
-      "global": true
+      "description": "Search"
     }
   },
   "browser_action": {
