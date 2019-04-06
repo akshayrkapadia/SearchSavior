@@ -1,6 +1,6 @@
 {
   "name": "SearchSavior",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Seamlessly Integrated Browser Extension For Conducting Better Academic Searches",
   "permissions": ["activeTab"],
   "browser_action": {
