@@ -1,4 +1,4 @@
-![SearchSavior Screenshot](./images/icon128.png)
+![SearchSavior Logo](./images/icon128.png)
 
 # SearchSavior
 A Seamlessly Integrated Browser Extension For Conducting Better Academic Searches
@@ -7,6 +7,10 @@ A Seamlessly Integrated Browser Extension For Conducting Better Academic Searche
 * License: GPL-3.0
 * Version: 2.1.0
 * Status: Development
+
+---
+![SearchSavior Screenshot](./images/screenshot.png)
+---
 
 SearchSavior is a fast and convenient way for users to quickly search for academic concepts within the same tab. The extension allows users to specifically search websites like Youtube, Khan Academy, Wikipedia, Yahoo Answers, Quora, Stack Overflow, Stack Exchange.
 
